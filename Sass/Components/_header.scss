@@ -8,7 +8,7 @@ html {
 body {
     font-family: "lato", sans-serif;
     font-weight: 400;
-    /*font-size: 16px;*/
+    font-size: 10px;
     line-height: 1.7;
     color: white;
     padding: 3rem; 
@@ -131,7 +131,7 @@ body {
     position: absolute;
     top: 117%;
     left: 13%;
-    background-color: #008e44;
+    background-color: #55c57a;
     color: white;
     font-weight: 700;
     letter-spacing: .5px;
@@ -142,7 +142,7 @@ body {
 
     &:hover {
         background-color: white;
-        color: #008e44;
+        color: #7ed56f;
 
     }
 }

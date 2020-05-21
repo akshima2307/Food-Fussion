@@ -8,7 +8,7 @@ html {
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
+  font-size: 10px;
   line-height: 1.7;
   color: white;
   padding: 3rem; }
@@ -117,7 +117,7 @@ body {
   position: absolute;
   top: 117%;
   left: 13%;
-  background-color: #008e44;
+  background-color: #55c57a;
   color: white;
   font-weight: 700;
   letter-spacing: .5px;
@@ -127,7 +127,7 @@ body {
   transition-property: background-color, color; }
   #first-segment button:hover {
     background-color: white;
-    color: #008e44; }
+    color: #7ed56f; }
 
 #second-segment h3 {
   font-size: 3rem;
@@ -229,6 +229,15 @@ body {
   100% {
     transform: translateX(-66.6666%); } }
 
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
+
 .heading-primary {
   color: white;
   text-transform: uppercase;
@@ -244,12 +253,25 @@ body {
     font-weight: 700;
     letter-spacing: 1.74rem; }
 
+.heading-secondary {
+  color: #55c57a;
+  text-transform: uppercase;
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: .6rem; }
+
+.heading-tertiary {
+  display: block;
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
 .navigation__background {
   width: 6rem;
   height: 6rem;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485, 0.5);
+  background-image: radial-gradient(#7ed56f, #28b485);
   border-radius: 50%;
   position: fixed;
   z-index: 1000;
@@ -260,12 +282,12 @@ body {
 
 .navigation__button {
   background-color: white;
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10%;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
-  border-radius: 50%;
+  top: 6.5rem;
+  right: 6.5rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -325,7 +347,7 @@ body {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem; }
+  margin-top: 3rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     display: inline-block;
     width: 3rem;
@@ -357,3 +379,69 @@ body {
 .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
   top: 0;
   transform: rotate(135deg); }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+  .row .col-1-of-3 {
+    border-radius: 25%;
+    width: calc(((100% - 2 * 12rem) / 3) - 2rem);
+    background-color: grey; }
+    .row .col-1-of-3:nth-child(1) {
+      margin-left: 4rem; }
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 12rem; }
+  .row .col-1-of-4 {
+    width: calc(((100% - 3 * 12rem) / 4) + 1rem);
+    background-color: grey; }
+    .row .col-1-of-4:nth-child(1) {
+      margin-left: 7rem; }
+    .row .col-1-of-4:not(:last-child) {
+      margin-right: 5rem; }
+
+.about {
+  height: 60vh;
+  background-color: white;
+  margin-bottom: 6rem; }
+
+.card {
+  height: 25rem;
+  background-size: cover;
+  position: relative;
+  position: relative;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .card::after, .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2); }
+  .card > h3 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; }
+  .card__one {
+    background-image: url("../img/img6.jpg"); }
+  .card__two {
+    background-image: url("../img/desert1.jpg"); }
+  .card__three {
+    background-image: url("../img/thali3.jpg"); }
+
+.menu {
+  height: 100vh; }
+  .menu-item {
+    height: 5.2rem; }
