@@ -1,7 +1,82 @@
 .menu  {
-    height: 100vh;
-    &-item {
-        height:52rem;
+    background-image: url("https://theovercast.ca/wp-content/uploads/2017/11/website-background-23.jpg");
+    background-size: cover;
+    background-color: $color-grey-light-1;
+    position: relative;
+    padding-bottom: 12rem;
+    &__heading{
+        color: $color-primary;
+        margin: 5rem 4rem;
+        font-weight: 700;
+        margin-top: 3rem;
     }
-    
+    &__btn{
+        background-color: $color-primary;
+        color: white;
+        padding: .7rem 2rem;
+        position: absolute;
+        top:92%;
+        right: 15%;
+        
+    }
+}
+.menu-item{
+    height: 25rem;
+    position: relative;
+    &__img{
+        background-size: cover;
+        height: 19rem;
+        &-1{
+            background-image: url("../img/img4.jpg");
+        }
+        &-2{
+            background-image: url("../img/img1.jpg");
+        }
+        &-3{
+            background-image: url("../img/img3.jpg");
+        }
+        &-4{
+            background-image: url("../img/img5.jpg");
+        }
+        &-5{
+            background-image: url("../img/thali1.jpg");
+        }
+        &-6{
+            background-image: url("../img/thali2.jpg");
+        }
+        &-7{
+            background-image: url("../img/thali3.jpg");
+        }
+        &-8{
+            background-image: url("../img/thali4.jpg");
+        }
+        &-9{
+            background-image: url("../img/desert1.jpg");
+        }
+        &-10{
+            background-image: url("../img/desert2.jpg");
+        }
+        &-11{
+            background-image: url("../img/desert3.jpg");
+        }
+        &-12{
+            background-image: url("../img/desert4.jpg");
+        }
+    }
+    &__name{
+        color:$color-primary;
+        display:block;
+        position: absolute;
+        top: 80%;
+        left:10%
+    }
+    &__rate{
+        font-size:1.5rem;
+        color: $color-primary;
+        display:block;
+        position: absolute;
+        top:80%;
+        right:10%
+    }
+
 }
