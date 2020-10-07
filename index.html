@@ -10,238 +10,87 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
-        <label for="navi-toogle" class="navigation__button">
-            <span class="navigation__icon">
-                &nbsp;
-            </span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Menu</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Contact Us</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Events</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"> <span>05</span> Order</a></li>
-            </ul>
-        </nav>
+  <section class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a class="navigation__link" href="#">HOME</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#">ABOUT US</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#">MENU</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#">ORDER ONLINE</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#">RESERVATION</a></li>
+      <li class="navigation__item"><a class="navigation__link" href="#">LOCATION</a></li>
+    </ul>
+  </section>
+  <section class="header">
+    <div class="header__images">
+        <img class="header__img header__img-1" src="img/pizza4.jpg" alt="Image">
+        <img class="header__img header__img-2" src="img/Indian1.jpg" alt="Image">
+        <img class="header__img header__img-3" src="img/img6.jpg" alt="Image">
+        <img class="header__img header__img-4" src="img/burger3.jpg" alt="Image">
     </div>
+    <div class="header__content">
+      <h1 class="header__heading">food fussion</h1>
+      <p class="header__para">Are you hungry ?</p>
+      <button class="header__btn">View Menu</button>
+    </div>
+  </section>
 
-    <section id="slider-section">
-        <div id="segment-container">
-            <div id="first-segment">
-                <div class="segment-container">
-                    <div class="heading">
-                        <h1 class="heading-primary">
-                            <span class="heading-primary--main">Food Fussion</span>
-                            <span class="heading-primary--sub">great food that makes your day best...</span>
-                        </h1>
-                        <button type="button" name="button">View Menu</button>
-                    </div>
+  <section class="about">
+    <div class="about__content">
+      <h1 class="about__heading">Our Story</h1>
+      <p class="about__para">Food Fussion is a restaurant that provide Indian as well as International dishes
+        located on a busy corner site in XYZ Market. With glazed frontage
+         on two sides of the building, overlooking the market and a bustling London intersection.</p>
+      <button class="about__btn" type="button" name="button">ABOUT US</button>
+    </div>
+    <div class="about__images">
+      <div class="about__img about__img-1">
+        <img class="about__img__image-1" src="img/resturant_1.jpg" alt="Image">
+      </div>
+      <div class="about__img about__img-2">
+        <img class="about__img__image-2" src="img/resturant_2.jpg" alt="Image">
+      </div>
+    </div>
+  </section>
 
+  <section class="feature-1">
+    <h1>Delightful</h1>
+    <h2>food</h2>
+  </section>
 
+  <section class="menu">
+    <div class="menu__image">
+      <img class="menu__img " src="img/pizza2.jpg" alt="Image">
+      <img class="menu__img " src="img/img4.jpg" alt="Image">
+      <img class="menu__img " src="img/desert5.jpg" alt="Image">
+      <img class="menu__img " src="img/Indian3.jpg" alt="Image">
+    </div>
+    <div class="menu__content">
+      <h1 class="menu__heading-1">Discover</h1>
+      <h1 class="menu__heading-2">MENU</h1>
+      <p class="menu__para">For those with pure Indian food indulgence in mind to those who want International dishes ,
+        come next door and sate your desires with our ever changing seasonally inspired small plates.  We love food,
+        lots of different food, just like you.
+      </p>
+      <button class="menu__btn" type="button" name="button">VIEW THE FULL MENU</button>
+    </div>
+  </section>
 
-                </div>
-            </div>
-            <div id="second-segment">
-                <div class="segment-container">
-                    <h3>Our Story</h3>
-                    <p>Cupcake tasty pepper vegetarian <em><b>savory restaurants</b></em> sweet delicious cook fruit
-                        vegetables fresh pizza. Fish spinach sushi Chinese food heating taste cheese mustard starter.
-                        Lovely pepper meat cupcake cheese cook breakfast pie pub plate local poultry gluten free.</p>
-                    <a href="#">Continue Reading</a>
-                </div>
-            </div>
-            <div id="third-segment">
-                <div class="segment-container">
-                    <h2>Book a reservation</h2>
-                    <form>
-                        <input type="email" name="" placeholder="Email">
-                        <input type="submit" name="" value="Submit">
-                    </form>
-                    <span class="small"><em>We'll be sure to get back to you within the next two business
-                            days.</em></span>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="slider-management">
-            <button id="left-arrow"></button>
-            <button id="right-arrow"></button>
-
-            <div id="slider-circles">
-                <div id="first-seg-circle" class="circle-segment active-circle-segment"></div>
-                <div id="second-seg-circle" class="circle-segment"></div>
-                <div id="third-seg-circle" class="circle-segment"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about" id="section-tours">
-        <div class="heading u-center-text  u-margin-bottom-medium u-margin-top-medium">
-            <h2 class="heading-secondary">
-                Our Services
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-1-of-3">
-                <div class="card card__one">
-                    <h3 class="heading-tertiary">Order Online</h3>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="card card__two">
-                    <h3 class="heading-tertiary">Events</h3>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="card card__three">
-                    <h3 class="heading-tertiary">Order in bulk</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="feature-2">
+    <div class="feature-2__content">
+      <h1 class= " feature-2__heading-1 ">Perfect</h1>
+      <h1 class="feature-2__heading-2">Fussion</h1>
+    </div>
+    <div class="feature-2__images">
+      <div class="feature-2__img feature-2__img-1">
+        <img class="feature-2__img__image-1" src="img/feature-bg.jpg" alt="Image">
+      </div>
+      <div class="feature-2__img feature-2__img-2">
+        <img class="feature-2__img__image-2" src="img/Indian2.jpg" alt="Image">
+      </div>
+    </div>
+  </section>
 
 
-    <section class="menu">
-        <h2 class="heading-secondary u-center-text  u-margin-bottom-medium u-margin-top-medium">Our
-            collection</h2>
-
-        <div class=" row">
-            <h3 class="heading-tertiary menu__heading"> SNACKS... </h3>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-1">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">snack1</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-2">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">snack2</h2>
-                    <span class="menu-item__rate">$12</span>
-
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-3">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">snack3</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-4">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">snack4</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class=" row">
-            <h3 class="heading-tertiary menu__heading"> Main-course... </h3>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-5">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Dish1</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-6">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Dish2</h2>
-                    <span class="menu-item__rate">$12</span>
-
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-7">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Dish3</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-8">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Dish4</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class=" row">
-            <h3 class="heading-tertiary menu__heading"> Desert... </h3>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-9">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Desret1</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-10">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Desret2</h2>
-                    <span class="menu-item__rate">$12</span>
-
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-11">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Desert3</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-            <div class="col-1-of-4">
-                <div class="menu-item">
-                    <div class="menu-item__img menu-item__img-12">
-                        &nbsp;
-                    </div>
-                    <h2 class="menu-item__name">Desert4</h2>
-                    <span class="menu-item__rate">$12</span>
-                </div>
-            </div>
-        </div>
-        <button class ="menu__btn">View-more</button>
-    </section>
-
-
-
-    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 

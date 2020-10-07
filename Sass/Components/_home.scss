@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap');
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;*/
+
+html{
+  font-size: 62.5%;
+  background-color: #FC4445;
+}
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.feature-1{
+  height: 40vh;
+  background-image: linear-gradient(to right bottom, rgba(252,68,69,0.5), rgba(252, 69 , 70, 0.5)), url("../img/feature-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 4rem;
+  & > h1{
+    color: #FFFFFF;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateX(-20%);
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.3rem;
+  }
+  & > h2{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateX(-35%);
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5.3rem;
+  }
+}
+
+.feature-2{
+  height: 40vh;
+  margin: 0 4rem;
+  background-image: linear-gradient(to right bottom, rgba(252,68,69,0.5), rgba(252, 69 , 70, 0.5)), url("../img/resturant_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__content{
+    color: white;
+    margin-left: 2rem;
+  }
+  &__heading-1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.3rem;
+  }
+  &__heading-2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5.3rem;
+    margin-left: 6rem;
+  }
+  &__images{
+    position: relative;
+    width: 55%;
+    height: 100%;
+  }
+  &__img{
+      position: absolute;
+    &-1{
+      top: 38%;
+      z-index: 10;
+      left: 20%;
+      transform: translateX(-20%);
+    }
+    &-2{
+      top: 10%;
+      left: 75%;
+      transform: translateX(-75%);
+    }
+    &__image-1{
+      width: 20rem;
+    }
+    &__image-2{
+      width: 30rem;
+    }
+  }
+}
