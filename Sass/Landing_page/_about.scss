@@ -1,0 +1,145 @@
+.about{
+  background: #ECECEC;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  font-size: 17rem;
+  &__content{
+    text-align: center;
+  }
+  &__heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+
+    color: #3C3B3B;
+
+  }
+  &__para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    width: 40.6rem;
+    color: #3C3B3B;
+    margin-top: 3rem;
+  }
+  &__btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FC4445;
+    color: #FC4445;
+
+  }
+  &__images{
+    position: relative;
+    width: 55%;
+  }
+  &__img{
+      position: absolute;
+    &-1{
+      top: 38%;
+      z-index: 10;
+      left: 20%;
+      transform: translateX(-20%);
+    }
+    &-2{
+      top: 10%;
+      left: 75%;
+      transform: translateX(-75%);
+    }
+    &__image-1{
+      width: 35rem;
+    }
+    &__image-2{
+      width: 40rem;
+    }
+  }
+}
+@media (max-width: 1024px){
+  .about{
+    &__img{
+      &-1{
+        left: 25%;
+      }
+      &__image-1{
+        width: 30rem;
+      }
+      &__image-2{
+        width: 35rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 900px){
+  .about{
+    &__img{
+      &__image-1{
+        width: 25rem;
+      }
+      &__image-2{
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 750px){
+  .about{
+    flex-direction: column;
+    &__content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__para{
+      width: 60%;
+    }
+    &__images{
+      width: 100%;
+      position: inherit;
+      display: flex;
+      justify-content: center;
+      margin: 4rem 0;
+    }
+    &__img{
+      position: inherit;
+      &-1{
+        margin-right: 2rem;
+        transform: translateX(0%);
+      }
+      &-2{
+        margin-left: 2rem;
+        transform: translateX(0%);
+      }
+      &__image-1{
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .about{
+    padding: 5rem 0;
+    &__img{
+      width: 50vw;
+      margin: 0;
+      &__image-1{
+        width: 100%;
+        height: 100%;
+      }
+      &__image-2{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+

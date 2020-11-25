@@ -1,0 +1,100 @@
+.Reserve__reservation{
+    height: 46vh;
+    background-color: white;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > h1{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #3d3d3d;
+        padding-bottom: 3rem;
+    }
+    &__btn{
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        color: #3d3d3d;
+        background-color: white;
+        &--active{
+            border-bottom: 3px solid #FC4445;
+            color: #FC4445;
+        }
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+        &:hover{
+            cursor: pointer;
+            color: #000000;
+        }
+    }
+    &__input{
+        display: flex;
+        justify-content: space-between;
+        & > figure {
+            margin-top: 4rem;
+            &:not(:last-child){
+                margin-right: 3rem;
+            }
+            & > input{
+                height: 3rem;
+                padding: 1rem;
+                border-radius: 5px;
+                border: 1px solid #3d3d3d;   
+            }
+        }
+    }
+    &__button{
+        margin-top: 5rem;
+        background-color:#3d3d3d;
+        color: #ffff;
+        font-size: 1.6rem;
+        width: 12rem;
+        height: 4rem;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: #000000;
+        }
+    }
+}
+
+.Reserve__feature{
+    height: 40vh;
+    display: flex;
+    & > div{
+        width: 50vw;
+        & > img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.Reserve__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6rem;
+    background-color: white;
+    & > div{
+        width: 50vw;
+        & > h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2rem;
+            line-height: 27px;
+            padding-bottom: 2rem;
+            color: #3d3d3d;
+        }
+        & > p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5rem;
+            line-height: 20px;
+            width: 65%;
+        }
+    }
+}

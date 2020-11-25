@@ -1,0 +1,104 @@
+.order-menu{
+    background-color: white;
+    &__btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 9rem;
+    }
+    &__btn{
+        font-size: 1.6rem;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        color: #3d3d3d;
+        background-color: white;
+        &--active{
+            border-bottom: 3px solid #FC4445; 
+            color: #FC4445;
+        }
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+        &:hover{
+            cursor: pointer;
+            color: #000000;
+        }
+    }
+
+    &__dishes{
+        display: grid;
+        justify-content: center;
+        align-items:center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5rem;
+        padding: 3rem 9rem;
+    }
+    &__dish{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        & > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        & > h3{
+            font-family: 'Open Sans', sans-serif;
+            color: #3d3d3d;
+            font-size: 1.9rem;
+            margin: 1rem 0;
+        }
+        & > div{
+            margin: 0.7rem 0;
+            font-family: 'Dancing Script', cursive;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            font-size: 1.6rem;
+            & > div{
+                font-size: 1.8rem;
+            }
+        }
+        & > span{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #FC4445;
+            font-size: 1.9rem;
+            margin: 1.7rem 0;
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .order-menu{
+        &__dishes{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
+@media (max-width: 550px){
+    .order-menu{
+        &__btns{
+            padding: 5rem 2rem;
+        }
+        &__dishes{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+@media (max-width: 450px){
+    .order-menu{
+        &__dishes{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+    }
+}
