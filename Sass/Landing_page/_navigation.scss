@@ -31,3 +31,8 @@
     border-bottom: 6px solid #FC4445;
   }
 }
+@media (max-width: 450px){
+  .navigation__item:not(:last-child){
+    margin-right: 1.8rem;
+  }
+}

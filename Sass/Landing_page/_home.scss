@@ -2,38 +2,29 @@
 /*font-family: 'Dancing Script', cursive;
 font-family: 'Open Sans', sans-serif;*/
 
-body{
-  margin: 4rem;
-}
-
-
-html{
-  font-size: 62.5%;
-  background-color: #FC4445;
-}
-@media (max-width: 1024px){
-  body{
-    margin: 3rem;
-  }
-  html{
-    font-size: 55%;
-  }
-}
-@media (max-width: 900px){
-  body{
-    margin: 0;
-  }
-  html{
-    font-size: 50%;
-  }
-}
-
 *,
 *::after,
 *::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+body{
+  margin: 4rem;
+}
+html{
+  font-size: 62.5%;
+  background-color: #FC4445;
+}
+@media (max-width: 1024px){
+  body{
+    margin: 0;
+  }
+  html{
+    font-size: 55%;
+  }
 }
 
 .feature-1{

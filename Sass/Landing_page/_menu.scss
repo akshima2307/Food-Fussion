@@ -81,3 +81,10 @@
   }
 }
 
+@media (max-width: 450px){
+  .menu{
+    &__para{
+      width: 30rem;
+    }
+  }
+}
